@@ -10,7 +10,7 @@
       v-for="task in updatedTasksList" 
       :key="task.id" :task="task" 
       @delete="handleTaskDeletion"
-      >
+      @toggle="handleTaskToggle">
     </AppTodoItem>
     <p class="mx-auto max-w-fit my-4" v-else>Du hast noch keine ToDo's in deiner Liste</p>
   </div>
@@ -53,7 +53,7 @@ import { nanoid } from 'nanoid';
   })
 
   console.log(updatedTasksList.value)
-  const activeTasks = computed(() => {
+    const activeTasks = computed(() => {
     return tasks.value.filter(task => task.done === false);
   });
   
@@ -70,6 +70,13 @@ import { nanoid } from 'nanoid';
     updatedTasksList.value = tasks.value;
     saveToDoList();
   }
+
+  function handleTaskToggle(taskIdToToggle) {
+    const task = tasks.value.find(t => t.id === taskIdToToggle);
+    if (task) {
+      task.done = !task.done;
+  }
+}
 
   function updateFilter(filter) {
     activeFilter.value = filter;
