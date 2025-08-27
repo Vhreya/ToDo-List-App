@@ -15,53 +15,29 @@
 <script setup>
 import { nanoid } from 'nanoid';
 
-  const tasks = ref([]);
-
   const updatedTasksList = ref(tasks.value);
-
-  onMounted(() => {
-    const savedTasks = localStorage.getItem('items')
-    if (savedTasks && savedTasks !== '[]') {
-      try {
-        tasks.value = JSON.parse(savedTasks);
-        console.log(tasks.value);
-        
-        updatedTasksList.value = tasks.value;
-      } catch (error) {
-        console.error("Failed to parse JSON from local storage", error);
-      }
-    }      
-  })
 
   console.log(updatedTasksList.value)
   const activeTasks = computed(() => {
     return tasks.value.filter(task => task.done === false);
   });
-  
+
+  const tasks = useLocalStorage('items', []);
 
   //Tasks löschen
   function handleTaskDeletion(taskIdToDelete) {
     tasks.value = tasks.value.filter(task => task.id !== taskIdToDelete);
     updatedTasksList.value = tasks.value;
-    saveToDoList();
   };
 
   //Task hinzufügen
   function handleTaskCreation(taskToAdd) {
     tasks.value.push({id: nanoid(), title: taskToAdd, done: false});
     console.log(tasks.value);
-    
-    updatedTasksList.value = tasks.value;
-    saveToDoList();
   }
 
   //Taskfilterung
   function updateTaskList(filteredTasksFromChild) {
     updatedTasksList.value = filteredTasksFromChild;
   }
-
-  function saveToDoList() {
-    localStorage.setItem('items', JSON.stringify(updatedTasksList.value));
-  }
-  
 </script> 
