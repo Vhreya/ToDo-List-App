@@ -11,7 +11,9 @@
                 class="ml-3 bg-transparent border-b-2 border-b-white/50"
                 placeholder=""
                 v-model="newTitle"
-                @keydown.enter.prevent="addNewToDo">
+                @keydown.enter.prevent="addNewToDo"
+                @keydown.esc.prevent="cancelAddTask"
+                @blur="cancelAddTask">
         </div>
     </div>
 </template>
@@ -47,4 +49,9 @@
   
         visible.value = true;
     };
+
+    function cancelAddTask(){
+        newTitle.value = '';
+        visible.value = true;
+    }
 </script>
