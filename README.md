@@ -51,7 +51,7 @@ Um das Projekt lokal auszuführen, befolge bitte die folgenden Schritte:
 
 Der Main brunch enthält die ursprüngliche Version, die funktioniert aber nicht optimiert ist.
 
-Der Refacotr/code-cleanup brunch ist eine verbesserte Version, nach einem Code-Review.
+Der refactor/code-cleanup brunch ist eine verbesserte Version, nach einem Code-Review.
 Dieser enthält sauberere Lösungen mit mehr nativen Vue Elementen.
 z.B. verbessertes Data handling durch eine Single Source of Truth.
 
