@@ -50,6 +50,7 @@ Der Main brunch enthält die ursprüngliche Version, die funktioniert aber nicht
 
 Der Refacotr/code-cleanup brunch ist eine verbesserte Version, nach einem Code-Review.
 Dieser enthält sauberere Lösungen mit mehr nativen Vue Elementen.
+z.B. verbessertes Data handling durch eine Single Source of Truth.
 
 Der feature/local-storage-composable branch enthält die Composal für die LocalStorage Logik.
 Hier befindet sich auch der PR.
