@@ -33,6 +33,10 @@ Um das Projekt lokal auszuführen, befolge bitte die folgenden Schritte:
 
 Öffne deinen Browser und navigiere zu http://localhost:3000.
 
+## offener PR
+
+* https://github.com/Vhreya/ToDo-List-App/pull/1
+
 ## Verfügbare Scripts
 
 * npm run dev: Startet den Nuxt-Entwicklungsserver im Watch-Modus.
