@@ -10,6 +10,7 @@ Wie der Titel schon sagt, habe ich mich für Option A die ToDo Liste entschieden
 * Framework: Nuxt 3
 * UI-Bibliothek: Vue 3 (Composition API)
 * Styling: Tailwind CSS (via @nuxtjs/tailwindcss Modul)
+* Icons: Iconify (via @nuxt/icon)
 * Paketmanager: npm
 
 ## Setup & Installation
