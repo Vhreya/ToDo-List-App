@@ -2,8 +2,8 @@
 
 Wie der Titel schon sagt, habe ich mich für Option A die ToDo Liste entschieden.
 
-! [Desktop View](https://github.com/Vhreya/ToDo-List-App/blob/main/public/grafik.png?raw=true)
-! [Mobile View](https://github.com/Vhreya/ToDo-List-App/blob/main/public/ScreenshotMobileView.png?raw=true)
+![Desktop View](https://github.com/Vhreya/ToDo-List-App/blob/main/public/grafik.png?raw=true)
+![Mobile View](https://github.com/Vhreya/ToDo-List-App/blob/main/public/ScreenshotMobileView.png?raw=true)
 
 ## Das Projekt wurde mit folgenden Technologien und Konzepten umgesetzt:
 
