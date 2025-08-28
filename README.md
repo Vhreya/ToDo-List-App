@@ -13,27 +13,27 @@ Wie der Titel schon sagt, habe ich mich für Option A die ToDo Liste entschieden
 
 Um das Projekt lokal auszuführen, befolge bitte die folgenden Schritte:
 
-### Repository klonen
+#### Repository klonen
     
 * git clone (https://github.com/Vhreya/ToDo-List-App)
 * cd ToDo-List-App
 
 
-### Abhängigkeiten installieren
+#### Abhängigkeiten installieren
     
 * npm install
 
 
-### Entwicklungsserver starten
+#### Entwicklungsserver starten
 
 * npm run dev
  
 
-### Andwendung öfnnen
+#### Andwendung öfnnen
 
 Öffne deinen Browser und navigiere zu http://localhost:3000.
 
-## offener PR
+## Offener PR
 
 * https://github.com/Vhreya/ToDo-List-App/pull/1
 
