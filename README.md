@@ -46,6 +46,9 @@ Um das Projekt lokal auszuführen, befolge bitte die folgenden Schritte:
 * npm run dev: Startet den Nuxt-Entwicklungsserver im Watch-Modus.
 * npm run build: Erstellt eine optimierte, produktionsreife Version der Anwendung.
 * npm run preview: Startet einen lokalen Server, um die produktionsreife Version zu testen.
+* npm run generate: Startet einen SSG-Build
+* npm run postinstall: wird von Nuxt verwendet um die Entwicklungsumgebung vorzubereiten und auf den neuesten Stand zu bringen.
+* npm run test: vitest test starten
 
 
 ## Notizen
