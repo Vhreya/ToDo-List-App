@@ -7,11 +7,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "dependencies": {
     "@nuxt/icon": "^2.0.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
+    "@vitejs/plugin-vue": "^6.0.1",
     "nanoid": "^5.1.5",
     "nuxt": "^4.0.3",
     "vue": "^3.5.18",
@@ -19,6 +21,9 @@
   },
   "devDependencies": {
     "@iconify-json/majesticons": "^1.2.4",
-    "@iconify-json/proicons": "^1.2.17"
+    "@iconify-json/proicons": "^1.2.17",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^18.0.1",
+    "vitest": "^3.2.4"
   }
 }
