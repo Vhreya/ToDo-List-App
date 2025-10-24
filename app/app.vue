@@ -77,4 +77,14 @@
   function updateFilter(filter) {
     activeFilter.value = filter;
   }
+  
+  useHead({
+  title: 'To-Do-Liste',
+  meta: [
+    { 
+      name: 'description', 
+      content: 'Eine einfache und schnelle To-Do-Listen-App, erstellt mit Nuxt 3. Verwalte deine Aufgaben, filtere sie und steigere deine Produktivität.' 
+    }
+  ]
+})
 </script> 
