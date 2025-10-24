@@ -1,14 +1,17 @@
 <template>
     <div>
-            <input type="checkbox" 
-                name="taskDone" 
-                :value="task.title"  
+            <input 
+                type="checkbox" 
+                :id="task.id" 
+                :value="task.title"
+                :checked="task.done"
                 class="accent-grass-green" 
-                v-model="task.done"
-                @keydown.enter="">
+                @change="emit('toggle', task.id)"
+                @keydown.enter.prevent="emit('toggle', task.id)">
             <label v-if="task.title != ''" class="mx-3" :for="task.title">{{ task.title }}</label>
         </div>
 </template>
+
 <script setup>
     const props = defineProps({
         task: {
@@ -16,4 +19,8 @@
             required: true
         }
     });
+
+    const emit = defineEmits([
+        'toggle'
+    ])
 </script>

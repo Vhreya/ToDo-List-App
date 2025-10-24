@@ -22,7 +22,7 @@
     ]);
 
     const visible = ref(true);
-    const newTitle = ref();
+    const newTitle = ref('');
     const titleInput = useTemplateRef('input')
 
     async function showInput() {
@@ -36,15 +36,18 @@
     //überprüfen, ob die Eingabe Text enthält
     //erst danach wird ein ToDo erstellt. Ansonsten erscheint wieder der + Button.
     function addNewToDo() {
-        if (newTitle.value !== undefined) {
-            newTitle.value = newTitle.value.trim();
-        }
+        const trimmedTitle = newTitle.value.trim();
 
-        if (newTitle.value) {            
+        if (trimmedTitle) {            
             emit('add', newTitle.value);
             newTitle.value = '';
         }
-  
+
         visible.value = true;
     };
+
+    function cancelAddTask() {
+        newTitle.value = '';
+        visible.value = true;
+    }   
 </script>
